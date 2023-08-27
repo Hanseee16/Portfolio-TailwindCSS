@@ -9,7 +9,20 @@ module.exports = {
     fontFamily: {
       poppins: ["poppins", "sans-serif"],
     },
-    extend: {},
+    colors: {
+      gelap: "#020214",
+    },
+    extend: {
+      keyframes: {
+        hero: {
+          "0%": { transform: "translateY(13px)" },
+          "100%": { transform: "translateY(-13px)" },
+        },
+      },
+      animation: {
+        "hero-animasi": "hero 2s ease-in-out infinite alternate-reverse both",
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
