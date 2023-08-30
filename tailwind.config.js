@@ -11,6 +11,7 @@ module.exports = {
     },
     colors: {
       gelap: "#020214",
+      Glassmorphism: "#ffffff0f",
     },
     extend: {
       keyframes: {
@@ -21,6 +22,9 @@ module.exports = {
       },
       animation: {
         "hero-animasi": "hero 2s ease-in-out infinite alternate-reverse both",
+      },
+      boxShadow: {
+        full: "0 4px 30px rgba(0, 0, 0, 0.1)",
       },
     },
   },
